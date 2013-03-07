@@ -239,6 +239,8 @@
 		};
 
 		ldo3_reg: regulator@5 {
+			regulator-min-microvolt = <1800000>;
+			regulator-max-microvolt = <3300000>;
 			regulator-always-on;
 		};
 
@@ -254,4 +256,9 @@
 
 &cpsw_emac1 {
 	phy_id = <&davinci_mdio>, <1>;
+};
+
+&mmc1 {
+	status = "okay";
+	vmmc-supply = <&ldo3_reg>;
 };
