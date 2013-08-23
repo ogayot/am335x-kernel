@@ -262,3 +262,7 @@
 	status = "okay";
 	vmmc-supply = <&ldo3_reg>;
 };
+
+&sham {
+	status = "okay";
+};
