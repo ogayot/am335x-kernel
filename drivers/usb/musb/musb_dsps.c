@@ -604,6 +604,9 @@ static int dsps_probe(struct platform_device *pdev)
 	struct resource *iomem;
 	int ret, i;
 
+	if (!strcmp(pdev->name, "musb-hdrc"))
+		return -ENODEV;
+
 	match = of_match_node(musb_dsps_of_match, pdev->dev.of_node);
 	if (!match) {
 		dev_err(&pdev->dev, "fail to get matching of_match struct\n");
