@@ -211,6 +211,7 @@
 			gpmc,num-cs = <8>;
 			gpmc,num-waitpins = <4>;
 			ti,hwmods = "gpmc";
+			ti,no-idle-on-init;
 		};
 
 		uart1: serial@4806a000 {
@@ -489,6 +490,7 @@
 			reg = <0x4c000000 0x100>;
 			interrupts = <0 110 0x4>;
 			ti,hwmods = "emif1";
+			ti,no-idle-on-init;
 			phy-type = <1>;
 			hw-caps-read-idle-ctrl;
 			hw-caps-ll-interface;
@@ -500,6 +502,7 @@
 			reg = <0x4d000000 0x100>;
 			interrupts = <0 111 0x4>;
 			ti,hwmods = "emif2";
+			ti,no-idle-on-init;
 			phy-type = <1>;
 			hw-caps-read-idle-ctrl;
 			hw-caps-ll-interface;
