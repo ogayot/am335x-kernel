@@ -450,6 +450,13 @@
 			0x1ac 0x22	/* mcasp0_ahclkx.mcasp0_axr3, INPUT | MODE2 */
 		>;
 	};
+
+	i2c2_pins: pinmux_i2c2_pins {
+		pinctrl-single,pins = <
+			0x178 (SLEWCTRL_SLOW | PIN_INPUT_PULLUP | MUX_MODE3) 	/* uart1_ctsn.i2c2_sda */
+			0x17c (SLEWCTRL_SLOW | PIN_INPUT_PULLUP | MUX_MODE3)	/* uart1_rtsn.i2c2_scl */
+		>;
+	};
 };
 
 &lcdc {
@@ -529,6 +536,11 @@
 
 &i2c2 {
 	status = "okay";
+	pinctrl-names = "default";
+	pinctrl-0 = <&i2c2_pins>;
+
+	clock-frequency = <100000>;
+
 	tlv320aic3x: tlv320aic3x@1b {
 		compatible = "ti,tlv320aic3x";
 		reg = <0x1b>;
