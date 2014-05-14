@@ -136,24 +136,6 @@ dtb-$(CONFIG_ARCH_MXS) += imx23-evk.dtb \
 	imx28-tx28.dtb
 dtb-$(CONFIG_ARCH_NOMADIK) += ste-nomadik-s8815.dtb
 dtb-$(CONFIG_ARCH_OMAP2PLUS) += omap2420-h4.dtb \
-	omap3430-sdp.dtb \
-	omap3-beagle.dtb \
-	omap3-devkit8000.dtb \
-	omap3-beagle-xm.dtb \
-	omap3-evm.dtb \
-	omap3-tobi.dtb \
-	omap3-igep0020.dtb \
-	omap3-igep0030.dtb \
-	omap4-panda.dtb \
-	omap4-panda-a4.dtb \
-	omap4-panda-es.dtb \
-	omap4-var-som.dtb \
-	omap4-sdp.dtb \
-	omap4-sdp-es23plus.dtb \
-	omap5-uevm.dtb \
-	am335x-evm.dtb \
-	am335x-evmsk.dtb \
-	am335x-bone.dtb \
 	am335x-boneblack.dtb
 dtb-$(CONFIG_ARCH_ORION5X) += orion5x-lacie-ethernet-disk-mini-v2.dtb
 dtb-$(CONFIG_ARCH_PRIMA2) += prima2-evb.dtb
